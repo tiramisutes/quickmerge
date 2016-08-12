@@ -1,0 +1,6 @@
+Hybrid assembly and PacBio assembly were merged using a custom C++ program
+(https://github.com/mahulchak/quickmerge). The program takes two fasta files
+(containing contigs from a PB only assembly and contigs from a hybrid assembly) as
+inputs and splices contigs from the two assemblies together to produce an assembly
+with higher contiguity. First, the program MUMmer(Kurtz, et al. 2004) is used to
+compute the unique alignments between contigs from the two assemblies
